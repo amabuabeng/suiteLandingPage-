@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
 
 /* Moblie View */
-@media only screen and (min-width: 377px) {
+@media only screen and (min-width: 375px) {
     .title {
         max-width: 375px;
         padding: 24px 16px;
