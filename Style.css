@@ -1,5 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
 
+:root {
+    --dark-blue: rgb(23, 35, 57);
+    --gray-blue: rgb(73, 86, 109);
+    --cream: rgb(243, 237, 231);
+    --white: rgb(250, 248, 246);
+    --purple: rgb(160, 96, 255);
+    --violet: rgb(203, 48, 227);
+    --orange: rgb(255, 168, 78);
+    --epilogue: 'Epilogue', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--epilogue);
+}
+
+/* html,
+body {
+    height: 100vh;
+} */
+
+body {
+    background-color: #F3EDE7;
+    display: flex;
+    justify-content: center;
+}
+
 /* Moblie View */
 @media only screen and (min-width: 375px) {
     .title {
@@ -19,7 +50,7 @@
         color: var(--dark-blue);
         background-color: var(--cream);
     }
-    
+
     .Secondary-Hover:hover {
         background-color: var(--dark-blue);
         color: var(--white);
@@ -71,8 +102,6 @@
         width: 50px;
     }
 
-    /* Footer  (Mobile) */
-
     .footer-title {
         flex-direction: column;
     }
@@ -98,13 +127,13 @@
         max-width: 768px;
         padding: 40px;
     }
-    
+
 
     .wesbite {
         padding: 80px 0;
     }
 
-    .Secondary-Hover {
+    .header {
         width: 225px;
         padding: 12px 24px;
         font-size: 16px;
@@ -154,8 +183,19 @@
     }
 
     .button-container {
-        padding: 275px 58px 64px 58px;
+        padding: 270px 64px 55px 64px;
     }
+    
+    .senior-hero {
+        padding: 40px 0;
+        font-size: 12px;
+        line-height: 32px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+       letter-spacing: 0.09px
+    }
+    
 
     .pattern {
         flex-direction: row;
@@ -170,7 +210,7 @@
         padding-bottom: 72px;
     }
 
-    /* .tool, */
+    .tool,
     .media-social {
         padding: 0;
     }
@@ -194,13 +234,13 @@
         font-size: 72px;
         line-height: 78px;
     }
-    
+
     .junior-hero > p {
         padding: 40px 320px 40px 0;
         font-size: 18px;
         line-height: 32px;
         color:  #49566D;
-        
+
     }
 
     .junior-hero > img {
@@ -225,7 +265,7 @@
         height: 375px; */
         padding: 0 0 0 96px;
         row-gap: 63px;
-        
+
     }
 
     .Bright {
@@ -266,45 +306,15 @@
         margin-right: 0;
     }
 }
-    
-    /* Styles */
-
-:root {
-    --dark-blue: rgb(23, 35, 57);
-    --gray-blue: rgb(73, 86, 109);
-    --cream: rgb(243, 237, 231);
-    --white: rgb(250, 248, 246);
-    --purple: rgb(160, 96, 255);
-    --violet: rgb(203, 48, 227);
-    --orange: rgb(255, 168, 78);
-    --epilogue: 'Epilogue', sans-serif;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: var(--epilogue);
-}
-
-html,
-body {
-    height: 100vh;
-}
-
-body {
-    background-color: #F3EDE7;
-    display: flex;
-    justify-content: center;
-}
 
 
 .logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
 }
 
 .Secondary-Hover {
@@ -313,9 +323,12 @@ body {
     border-color:  #172339;
     border-style: solid;
     border-width: 1px;
+    width: 219px;
+    height: 56px;
     cursor: pointer;
-    
-    
+    font-size: 16px;
+    line-height: 32px;
+
 }
 
 .junior-hero > img {
@@ -343,7 +356,7 @@ body {
     height: 61px;
     background-color: #172339;
     color: #FAF8F6;
-    /* border: none; */
+    border: none;
     border-radius: 8px;
     line-height: 32px;
     cursor: pointer;
@@ -395,17 +408,19 @@ body {
 
 .senior-hero {
     padding: 40px 0;
-    font-size: 18px;
-    color: var(--cream);
+    font-size: 17px;
     line-height: 32px;
     font-weight: 400;
+    font-style: normal;
+    text-align: center;
+   letter-spacing: 0.09px
+ 
 }
 
 .footer {
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
-    color: var(--white);
 }
 
 .second-heading {
